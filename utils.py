@@ -28,7 +28,7 @@ import numpy as np
 embedding_file = "/Users/Raunaq/Dropbox/courses/Spring_16/CS224N/Assignments/4/assignment4/download/dwr/glove.6B.100d.txt"
 n_tokens = 10000
 
-# This function places an <eos> token at the end of each sentence
+# This function places an <eos> token at the end of each sentenc
 def _read_words(filename):
   with tf.gfile.GFile(filename, "r") as f:
     return f.read().decode("utf-8").replace("\n", "<eos>").split()
